@@ -1,6 +1,6 @@
+'''
 
-
-#1) Print all numbers from 1 to 10 using a loop.
+# #1) Print all numbers from 1 to 10 using a loop.
 
 
 class number:
@@ -479,6 +479,13 @@ p1.Play()
 print("------------------------")
 
 
+
+
+
+
+
+
+
 print("1)=================================")
 #1) 
 
@@ -611,3 +618,141 @@ s1.em_salary()
 
 print("6)=================================")
 
+class vehical:
+    pass
+class car(vehical):
+    def start(self):
+        print("Car is start")
+class bike(vehical):
+    def start(self):
+        print("Bike is start")
+class truck(vehical):
+    def start(self):
+        print("truck is starting")
+
+c1 = car()
+c1.start()
+
+c1 = bike()
+c1.start()
+
+c1 = truck()
+c1.start()
+
+print("7)=================================")
+
+
+class employee:
+    def __init__(self,id,name,work):
+        self.id = id
+        self.name = name
+        self.work = work
+class devloper(employee):
+    def pro_lang(self):
+        print("programing langudge:-","python")
+
+class maneger(employee):
+    def details_emp(self):
+        print("total employees:-",10)
+
+obj = employee(11, "adi", "web devloper")
+obj = devloper(11, "adi", "web devloper")
+obj.pro_lang()
+obj = maneger(12, "vedd", "data scientist")
+obj.details_emp()
+
+
+print("8)=================================")
+
+
+class person:
+    def __init__(self,name,age):
+        self.name = name 
+        self.age = age 
+
+class employee(person):
+    def __init__(self, name, age, id, salary):
+        super().__init__(name, age)
+        self.id = id
+        self.salary = salary
+
+    def info(self):
+        print("Employee ID:", self.id)
+        print("Salary:", self.salary)
+    
+
+class manager(employee):
+    def team(self):
+        print("Team size:-",2)
+
+ram = employee("Akash",23,11,35000)
+ram.info()
+ram = manager("rahul",24,12,30000)
+ram.team()
+'''
+
+print("9)=================================")
+
+
+
+class person:
+    def __init__(self,name,age):
+        self.name = name 
+        self.age = age 
+
+class employee(person):
+    def __init__(self, name, age, id, salary):
+        super().__init__(name, age)
+        self.id = id
+        self.salary = salary
+
+    def info(self):
+            print("Employee ID:", self.id)
+            print("Salary:", self.salary)
+
+
+obj1 = employee("Adi",21,11,45000)
+obj1.info()
+
+print("Name:", obj1.name)
+print("Age:", obj1.age)
+print("Employee ID:", obj1.id)
+print("Salary:", obj1.salary)
+
+print("10)=================================")
+
+
+class Payment:
+    def pay(self):
+        print("Payment processing...")
+
+
+class UPIPayment(Payment):
+    def pay(self):
+        print("Payment done using UPI")
+
+
+class CardPayment(Payment):
+    def pay(self):
+        print("Payment done using Card")
+
+
+class CashPayment(Payment):
+    def pay(self):
+        print("Cash on Delivery selected")
+
+
+def make_payment(payment):
+    payment.pay()
+
+
+upi = UPIPayment()
+card = CardPayment()
+cash = CashPayment()
+
+make_payment(upi)
+make_payment(card)
+make_payment(cash)
+
+
+print("=============Assingment completed====================")
