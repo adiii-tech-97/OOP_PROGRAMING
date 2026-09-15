@@ -1,6 +1,6 @@
-'''
 
-# #1) Print all numbers from 1 to 10 using a loop.
+
+#1) Print all numbers from 1 to 10 using a loop.
 
 
 class number:
@@ -127,9 +127,9 @@ class product:
         self.n = n
     def data(self):
         pro = 1
-        while n > 0:
-            pro*= n%10
-            n=n//10
+        while self.n > 0:
+            pro*= self.n%10
+            self.n=self.n//10
         print(pro)
 n=int(input("enter your number:"))
 p1=product(n)
@@ -322,6 +322,8 @@ d1=fibonacci_num(n)
 d1.data()
 
 
+print("---------- new work --------------")
+
 #1)
 
 print("1).\n-------------------------")
@@ -481,7 +483,7 @@ print("------------------------")
 
 
 
-
+print("------------New Assingment-----------")
 
 
 
@@ -689,7 +691,7 @@ ram = employee("Akash",23,11,35000)
 ram.info()
 ram = manager("rahul",24,12,30000)
 ram.team()
-'''
+
 
 print("9)=================================")
 
@@ -753,6 +755,8 @@ cash = CashPayment()
 make_payment(upi)
 make_payment(card)
 make_payment(cash)
+
+
 
 
 print("=============Assingment completed====================")
