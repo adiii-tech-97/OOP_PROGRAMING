@@ -1,4 +1,4 @@
-#1).
+#1).'''
 data=[10,20,[30,40,50],60]
 print(type(data))
 print(data[2][1])
@@ -122,3 +122,11 @@ data = [{"department": "IT","employees": [{"name": "A","data": (10, [20, 30, {"m
         },"data": (70, [80, 90, {"marks": [100, 110, 120]}])}]}]
 
 print(data[0]["employees"][1]["data"][1][2]["marks"][1])
+
+
+
+import numpy as np 
+
+arr=np.array([10,20,30,40,50])
+print(arr.ndim)
+print(arr)
